@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanna's Gym</title>
+    <style>
+        body{
+            background-image: url(img/bg.jpg);
+            color: aliceblue;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        .header{
+            /* border:2px solid red; */
+            margin:40px 10px;
+            padding:5px;
+            display:inline-block;
+            width:30%;
+        }
+        #left{
+            width:20%;
+            position:absolute;
+            top:10px;
+            left:5px;
+        }
+        #mid{
+            width:50%;
+            position:absolute;
+            left:380px;
+            top:10px;
+        }
+        #right{
+            width:15%;
+            position:absolute;
+            top:10px;
+            right:10px;
+        }
+        .header img{
+            display:inline;
+        }
+        .name{
+            display:inline-block;
+            width:40%;
+            margin:5px;
+            padding:10px;
+            padding-right:2px;
+            font-size: larger;
+        }
+        li{
+            display:inline;
+            text-decoration:none;
+            margin:5px;
+            padding:2px;
+            font-size: larger;
+        }
+        a{
+            text-decoration: none;
+            color:antiquewhite;
+            font-size: larger;
+            margin:25px;
+            padding:5px;
+        }
+        .btn{
+            padding:10px;
+            margin:5px;
+            border-radius:10px;
+            background-color: rgb(41, 40, 40);
+            color:aliceblue;
+            cursor:pointer;
+            font-weight: bold;
+        }
+        a:hover{
+            color:rgb(113, 131, 131);
+        }
+        .btn:hover{
+            color:rgb(143, 141, 145);
+            background-color: rgb(57, 56, 56);
+        }
+        .form{
+            /* border:2px solid red; */
+            margin:250px;
+            width:600px;
+        }
+        .form input{
+            margin:30px 20px;
+            padding:10px;
+            font-size: larger;
+            display:block;
+            border-radius:10px;
+        }
+      .form h1{
+            margin:20px;
+            
+        }
+        .btn1{
+            margin:30px 20px;
+            padding:10px;
+            font-size: larger;
+            display:block;
+            border-radius:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="left" class="header">
+             <img src="img/logo1.jpg" height="100px" width="100px">
+             <div class="name">TAMANNA'S GYM</div>
+        </div>
+        <div id="mid" class="header">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Fitness</a></li>
+            </ul>
+        </div>
+        <div id="right" class="header">
+              <button class="btn">Call Us</button>
+              <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="form">
+        <h1>Join and enjoy Fitness!!</h1>
+    <form action="gym.php" id="form">
+             <input type="textbox" placeholder="Enter your name">
+             <input type="textbox" placeholder="Enter your gender">
+             <input type="textbox" placeholder="Enter your age">
+             <input type="textbox" placeholder="Enter your weight">
+             <input type="textbox" placeholder="Enter your height">
+             <button class="btn btn1">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
